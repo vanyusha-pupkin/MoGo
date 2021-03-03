@@ -1,7 +1,7 @@
-# Проект «Palmer-s»
+# Проект «MoGo»
 
 ---
-## Ссылка на сайт - [https://](https://)
+## Ссылка на сайт - [https://vanyusha-pupkin.github.io/MoGo/](https://vanyusha-pupkin.github.io/MoGo/)
 
 ## Как использовать
 
