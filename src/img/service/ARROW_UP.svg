@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #ccc;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="ARROW_DOWN" data-name="ARROW / DOWN" class="cls-1" d="M1521.14,3955.47l7.86-7.85,7.96,7.96h0a1.5,1.5,0,0,0,2.54-1.08,1.483,1.483,0,0,0-.42-1.04h0l-9-9h0a1.472,1.472,0,0,0-1.08-.46h-0.01a1.488,1.488,0,0,0-1.08.46h0l-9,9h0.01A1.5,1.5,0,1,0,1521.14,3955.47Z" transform="translate(-1518.5 -3944)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.03 12.03"><title>arrow_up</title><path d="M2.64,11.47,10.5,3.62l8,8h0a1.5,1.5,0,0,0,2.12-2.12h0l-9-9h0A1.47,1.47,0,0,0,10.5,0h0A1.47,1.47,0,0,0,9.41.46h0l-9,9h0a1.5,1.5,0,0,0,2.1,2.14Z" transform="translate(0.03 0)" fill="#ccc" fill-rule="evenodd"/></svg>

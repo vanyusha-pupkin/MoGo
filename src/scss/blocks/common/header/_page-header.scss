@@ -1,0 +1,25 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.page-header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+}
+.page-header__logo {
+  font-family: Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+
+  &:not([href]) {
+    cursor: default;
+  }
+}
+
+.page-header__nav {}

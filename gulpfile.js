@@ -185,11 +185,11 @@ function svgsprite(){
           plugins: [{
               removeViewBox: false
             }
-            // ,{
-            //    removeAttrs: {
-            //     attrs: 'fill'
-            //   }
-            // }
+            ,{
+               removeAttrs: {
+                attrs: 'fill'
+              }
+            }
             ]
       }))
       // .pipe(svgmin())

@@ -1,0 +1,19 @@
+.page {
+  box-sizing: border-box;
+}
+
+.page__body {}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__header {}
+
+.page__main {
+  min-height: 100vh;
+}
+
+.page__header {}
