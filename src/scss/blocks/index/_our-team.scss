@@ -1,0 +1,139 @@
+.our-team {
+  padding-top: 95px;
+  padding-bottom: 115px;
+}
+
+.our-team__header {
+  margin-bottom: 90px;
+}
+
+.our-team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.our-team__item {
+  flex: 0 0 33.333%;
+  padding: 0 15px;
+  max-width: 33.33%;
+}
+
+.item-our-team {}
+
+.item-our-team__body {}
+
+.item-our-team__top {
+
+  margin-bottom: 30px;
+
+  background-color: $color-turquoise;
+}
+
+.item-our-team__image {
+  position: relative;
+
+  // height: 470px;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+  }
+}
+
+.item-our-team__image-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background-image: linear-gradient(to top, rgba(#fce38a, 0.9), rgba(#f38181, 0.9));
+
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  .item-our-team__image:hover & {
+    opacity: 1;
+  }
+}
+
+.item-our-team__social {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  .item-our-team__image:hover & {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.item-our-team__bottom {
+  text-align: center;
+}
+
+.item-our-team__name {
+  margin-bottom: 10px;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.item-our-team__specialization {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  color: $color-grey;
+}
+
+.social {
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  margin-right: 1px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+
+  background-color: $color-yellow;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-red;
+  }
+}
+
+.social__icon {
+
+  fill: $color-red;
+  .social__link:hover & {
+    fill: $color-white;
+  }
+}
