@@ -1,0 +1,26 @@
+.for-all-devices {
+  position: relative;
+
+  padding-top: 110px;
+
+  text-align: center;
+
+  @include background-image-webp("../img/for-all-devices/bg", "jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.for-all-devices__header {
+  // margin-bottom: 50px;
+}
+
+.for-all-devices__image-tablet {}
+
+.for-all-devices__image-phone {
+  position: absolute;
+  left: 50%;
+  bottom: -90px;
+
+  transform: translate(120px, 0);
+}
