@@ -1,0 +1,42 @@
+.block-header {
+  text-align: center;
+}
+
+.block-header__title {
+  margin-bottom: 20px;
+
+  font-family: Myriad Pro;
+  font-size: 24px;
+  color: #333333;
+}
+
+.block-header__subtitle {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+
+  &::after {
+    content: "";
+
+    display: block;
+    margin:0 auto;
+    margin-top: 34px;
+
+    width: 60px;
+    height: 3px;
+
+    background-color: $color-red;
+  }
+}
+
+.block-header__text {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 45px;
+
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1.6;
+}
