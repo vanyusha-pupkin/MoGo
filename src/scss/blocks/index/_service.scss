@@ -27,7 +27,8 @@
 .service__item {
   margin-bottom: 10px;
 }
-.service__footer {}
+
+.service__reviews {}
 
 //=========================================================
 .item-service {}
@@ -105,109 +106,5 @@
 
   .item-service--active & {
     display: block;
-  }
-}
-
-//=========================================================
-.footer-service {
-  background-color: #f8f8f8;
-}
-
-.footer-service__body {
-  position: relative;
-
-  display: flex;
-  padding: 70px 0;
-  padding-left: 110px;
-  padding-right: 100px;
-
-}
-
-.footer-service__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 150px;
-  height: 150px;
-  margin-right: 60px;
-
-  border: 3px solid $color-turquoise;
-
-  svg {
-    fill: $color-turquoise;
-  }
-}
-
-.footer-service__content {}
-
-.footer-service__text {
-  margin-bottom: 18px;
-
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.5;
-  color: $color-grey;
-}
-
-.footer-service__author {
-  position: relative;
-
-  padding-left: 70px;
-
-  font-family: KaushanScript;
-  font-size: 24px;
-  color: #333333;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-
-    top: 50%;
-    left: 0;
-
-    width: 60px;
-    height: 3px;
-    background-color: $color-red;
-
-    transform: translate(0, -50%);
-  }
-}
-
-.footer-service__toggle {
-  position: absolute;
-  top: 50%;
-
-  background-color: transparent;
-
-  transform: translate(0, -50%);
-  // transition: all 0.3s ease;
-
-  svg {
-    fill: #cccccc ;
-  }
-
-  &:hover {
-    svg {
-      fill: $color-red ;
-    }
-  }
-
-  &:active {
-    opacity: 0.7;
-  }
-
-  &--prev {
-    left: 0;
-
-    // transform: rotate(-90deg);
-  }
-
-  &--next {
-    right: 0;
-
-    transform: rotate(180deg);
   }
 }

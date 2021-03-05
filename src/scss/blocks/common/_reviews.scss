@@ -1,0 +1,102 @@
+
+.reviews {
+  background-color: #f8f8f8;
+}
+
+.reviews__body {
+  position: relative;
+
+  display: flex;
+  padding: 70px 0;
+  padding-left: 110px;
+  padding-right: 100px;
+
+}
+
+.reviews__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 150px;
+  height: 150px;
+  margin-right: 60px;
+
+  border: 3px solid $color-turquoise;
+
+  svg {
+    fill: $color-turquoise;
+  }
+}
+
+.reviews__content {}
+
+.reviews__text {
+  margin-bottom: 18px;
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  color: $color-grey;
+}
+
+.reviews__author {
+  position: relative;
+
+  padding-left: 70px;
+
+  font-family: KaushanScript;
+  font-size: 24px;
+  color: #333333;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    width: 60px;
+    height: 3px;
+    background-color: $color-red;
+
+    transform: translate(0, -50%);
+  }
+}
+
+.reviews__toggle {
+  position: absolute;
+  top: 50%;
+
+  background-color: transparent;
+
+  // transition: all 0.3s ease;
+
+  svg {
+    fill: #cccccc ;
+  }
+
+  &:hover {
+    svg {
+      fill: $color-red ;
+    }
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--prev {
+    left: 0;
+    transform: translate(0, -50%);
+    // transform: rotate(-90deg);
+  }
+
+  &--next {
+    right: 0;
+
+    transform: translate(0, -50%) rotate(180deg);
+  }
+}

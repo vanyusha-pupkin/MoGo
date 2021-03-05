@@ -18,13 +18,13 @@
   }
 
   @media (max-width: $bp-3+px) {
-    width: $width-bp-3;
-    margin: 0 auto;
-    // padding: 0 $padding-bp-3;
+    // width: $width-bp-3;
+    // margin: 0 auto;
+    padding: 0 $padding-bp-3;
   }
 
   @media (max-width: $bp-4+px) {
-    width: $width-min;
+    // width: $width-min;
     padding: 0 $padding-width-min;
   }
 }

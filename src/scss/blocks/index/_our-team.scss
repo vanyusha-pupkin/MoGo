@@ -33,31 +33,40 @@
 .item-our-team__image {
   position: relative;
 
-  // height: 470px;
-
   transition: all 0.3s ease;
+
+  background-image: linear-gradient(to top, #fce38a, #f38181);
+
+  img {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
 
   &:hover {
     transform: translate(-10px, -10px);
+
+    img{
+      opacity: 0.1;
+    }
   }
 }
 
-.item-our-team__image-bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+// .item-our-team__image-bg {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
 
-  background-image: linear-gradient(to top, rgba(#fce38a, 0.9), rgba(#f38181, 0.9));
+//   background-image: linear-gradient(to top, rgba(#fce38a, 0.9), rgba(#f38181, 0.9));
 
-  opacity: 0;
-  transition: all 0.3s ease;
+//   opacity: 0;
+//   transition: all 0.3s ease;
 
-  .item-our-team__image:hover & {
-    opacity: 1;
-  }
-}
+//   .item-our-team__image:hover & {
+//     opacity: 1;
+//   }
+// }
 
 .item-our-team__social {
   position: absolute;
