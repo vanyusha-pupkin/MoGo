@@ -1,0 +1,145 @@
+.blog {
+  padding-top: 110px;
+  padding-bottom: 116px;
+}
+
+.blog__header {
+  margin-bottom: 47px;
+}
+
+.blog__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin:0 -15px;
+}
+
+.blog__item {
+  flex: 0 0 33.33%;
+  padding: 0 15px;
+}
+
+//=========================================================
+.item-blog {}
+
+.item-blog__link {
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $color-red;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.item-blog__image {
+  position: relative;
+
+  margin-bottom: 16px;
+}
+
+.item-blog__date {
+  position: absolute;
+  left: -10px;
+  bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 70px;
+
+  text-align: center;
+
+  background-color: $color-turquoise;
+}
+
+.item-blog__day {
+  margin-bottom: 4px;
+
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.item-blog__month {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.item-blog__title {
+  margin-bottom: 16px;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.item-blog__text {
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $color-grey;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.item-blog__footer {
+  display: flex;
+  align-items: center;
+
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--warm-grey);
+}
+
+.item-blog__views {
+  position: relative;
+
+  margin-right: 18px;
+  padding-left: 27px;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: translate(0, -50%);
+
+    fill: $color-turquoise;
+  }
+}
+
+.item-blog__comments {
+  position: relative;
+
+  padding-left: 27px;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: translate(0, -50%);
+
+    fill: $color-turquoise;
+  }
+
+
+}
