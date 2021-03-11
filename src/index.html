@@ -17,26 +17,25 @@
       </div>
 
       <!------------------- header ------------------->
+      @@include('html/_header.html', {
 
-@@include('html/_header.html', {
+        'link-logo-index': '',
 
-  'link-logo-index': '',
-
-  'active-about': 'main-nav__link--active',
-  'active-service': '',
-  'active-work': '',
-  'active-blog': '',
-  'active-contact': '',
+        'active-about': 'main-nav__link--active',
+        'active-service': '',
+        'active-work': '',
+        'active-blog': '',
+        'active-contact': '',
 
 
-  'link-about': '',
-  'link-service': 'href="#"',
-  'link-work': 'href="#"',
-  'link-contacts': 'href="#"',
-  'link-blog': 'href="#"',
-  'link-contact': 'href="#"',
+        'link-about': '',
+        'link-service': 'href="#"',
+        'link-work': 'href="#"',
+        'link-contacts': 'href="#"',
+        'link-blog': 'href="#"',
+        'link-contact': 'href="#"',
 
-})
+      })
 
 
       <!------------------- content ------------------>
@@ -851,7 +850,7 @@
                 <div class="item-blog__footer">
                   <p class="item-blog__views">
                     <svg width="20" height="12">
-                      <use xlink:href="#icon-speech bubble"></use>
+                      <use xlink:href="#icon-speech-bubble"></use>
                     </svg>
                     <span>542</span>
                   </p>
@@ -936,11 +935,19 @@
           </div>
         </section>
 
+        <section class="map">
+          <svg class="map__pin" width="20" height="26">
+            <use xlink:href="#icon-pin"></use>
+          </svg>
+          <a class="map__link" href="#">Open map</a>
+
+        </section>
+
       </main>
 
 
     <!------------------- footer ------------------->
-@@include('html/_footer.html', {'': ''})
+    @@include('html/_footer.html', {'': ''})
 
     <!---------------- modal-windows --------------->
 

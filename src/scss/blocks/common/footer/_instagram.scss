@@ -1,0 +1,43 @@
+.instagram {}
+
+.instagram__title {
+  margin-bottom: 38px;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.instagram__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1px;
+  margin-bottom: 16px;
+}
+
+.instagram__item {
+  flex: 0 0 33.333%;
+  padding: 0 1px;
+  margin-bottom: 2px;
+}
+
+.instagram__link {}
+
+.instagram__more {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.85;
+  color: #333333;
+
+  &:hover {
+    color: $color-red;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

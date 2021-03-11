@@ -1,0 +1,34 @@
+.map {
+  padding: 57px 0;
+
+  text-align: center;
+
+  @include background-image-webp("../img/map/bg", "jpg");
+}
+
+.map__pin {
+  fill: $color-red;
+}
+
+.map__link {
+  display: block;
+  padding-top: 16px;
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f38181;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 18px;
+
+    width: 60px;
+    height: 3px;
+
+    background-color: $color-red;
+  }
+}
