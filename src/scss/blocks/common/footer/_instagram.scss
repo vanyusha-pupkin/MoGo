@@ -8,11 +8,16 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #333333;
+
+  @media (max-width: $bp-1+px) {
+    margin-bottom: 30px;
+  }
 }
 
 .instagram__list {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
+  width: auto;
   margin: 0 -1px;
   margin-bottom: 16px;
 }
@@ -21,6 +26,10 @@
   flex: 0 0 33.333%;
   padding: 0 1px;
   margin-bottom: 2px;
+
+  @media (max-width: $bp-2+px) {
+    flex: 0 0 auto;
+  }
 }
 
 .instagram__link {}

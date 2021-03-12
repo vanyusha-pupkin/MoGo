@@ -5,11 +5,37 @@
 
 .brands__list {
   display: flex;
-  justify-content: space-between;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -15px;
   padding: 0 10px;
+
+  text-align: center;
+
+  @media (max-width: $bp-2+px) {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: $bp-3+px) {
+    max-width: 400px;
+  }
 }
 
-.brands_item {}
+.brands_item {
+  flex: 0 0 16.666%;
+  margin-bottom: 15px;
+  padding: 0 15px;
+
+  @media (max-width: $bp-2+px) {
+    flex: 0 0 33.333%;
+  }
+
+  @media (max-width: $bp-3+px) {
+    flex: 0 0 50%;
+  }
+}
 
 .brands__image {}

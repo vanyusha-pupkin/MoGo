@@ -1,13 +1,14 @@
-.service {
-  padding-top: 110px;
-}
+.service {}
 
 .service__header {
-  margin-bottom: 90px;
+  // margin-bottom: 90px;
+  @include adaptiv-value("margin-bottom", 90, 50, 1);
 }
 
 .service__content {
-  margin-bottom: 120px;
+  // margin-bottom: 120px;
+  @include adaptiv-value("margin-bottom", 100, 50, 1);
+
 }
 
 .service__row {
@@ -17,6 +18,19 @@
 .service__column {
   flex: 0 0 50%;
   max-width: 50%;
+
+  &--image {
+    @media (max-width: $bp-2+px) {
+      display: none;
+    }
+  }
+
+  &--content {
+    @media (max-width: $bp-2+px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
 }
 
 .service__image {
@@ -24,6 +38,7 @@
 }
 
 .service__list {}
+
 .service__item {
   margin-bottom: 10px;
 }
@@ -32,7 +47,9 @@
 
 //=========================================================
 .item-service {}
+
 .item-service__body {}
+
 .item-service__header {
   display: flex;
   align-items: center;

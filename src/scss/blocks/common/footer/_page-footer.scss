@@ -1,10 +1,12 @@
 .page-footer {
-  padding-top: 70px;
+  // padding-top: 70px;
+  @include adaptiv-value("padding-top", 70, 50, 1);
   background-color: #f8f8f8;
 }
 
 .page-footer__row {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -15px;
 }
 
@@ -12,12 +14,33 @@
   flex: 0 0 41.463%;
   padding: 0 15px;
 
+  @media (max-width: $bp-2+px) {
+    flex: 0 0 100%;
+
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $bp-3+px) {
+    flex: 0 0 100%;
+  }
+
   &--blogs {
     flex: 0 0 34.146%;
+
+    @media (max-width: $bp-2+px) {
+      flex: 0 0 50%;
+    }
+
   }
 
   &--instagram {
     flex: 0 0 24.39%;
+
+    @media (max-width: $bp-2+px) {
+      flex: 0 0 50%;
+      align-self: start;
+    }
+
   }
 }
 
@@ -28,6 +51,10 @@
   font-size: 46px;
   font-weight: 700;
   color: #cccccc;
+
+  @media (max-width: $bp-1+px) {
+    margin-bottom: 20px;
+  }
 }
 
 .page-footer__text {
@@ -66,20 +93,33 @@
 
 .form-page-footer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .form-page-footer__item {
   flex: 0 0 230px;
+
+  @media (max-width: $bp-4+px) {
+    flex: 0 0 100%;
+
+    margin-bottom: 15px;
+  }
 }
 
 .form-page-footer__input {}
 
 .form-page-footer__button {
   flex: 0 0 150px;
+
+  @media (max-width: $bp-4+px) {
+    flex: 0 0 100%;
+  }
+
 }
 
 .page-footer__bottom {
-  margin-top: 70px;
+  // margin-top: 70px;
+  @include adaptiv-value("margin-top", 70, 20, 1);
   padding: 22px 0;
 
   font-family: Montserrat;

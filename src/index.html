@@ -262,8 +262,6 @@
 
             </ul>
 
-
-
           </div>
         </section>
 
@@ -294,7 +292,7 @@
 
             <div class="service__content">
               <div class="service__row">
-                <div class="service__column">
+                <div class="service__column  service__column--image">
                   <div class="service__image">
                     <picture>
                       <source type="image/webp" srcset="img/service/01.webp">
@@ -302,7 +300,7 @@
                     </picture>
                   </div>
                 </div>
-                <div class="service__column">
+                <div class="service__column  service__column--content">
                   <ul class="service__list">
 
                     <li class="service__item  item-service  item-service--active">
@@ -395,11 +393,10 @@
               </div>  <!-- reviews__body -->
             </div>  <!-- container -->
           </div>  <!-- service__reviews -->
-
         </section>
 
         <section class="our-team">
-          <div class="container">
+          <!-- <div class="container"> -->
 
           <div class="container">
             <div class="our-team__header  section-header">
@@ -562,9 +559,7 @@
                   </div>
                 </div>
               </li>
-
             </ul>
-
 
           </div>
         </section>
@@ -831,102 +826,108 @@
             <ul class="blog__list">
 
               <li class="blog__item  item-blog">
-                <a href="#">
-                  <div class="item-blog__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/blog/01.webp">
-                      <img src="img/blog/01.jpg" alt="">
-                    </picture>
-                    <time class="item-blog__date" datetime="2021-01-15">
-                      <span class="item-blog__day">15</span>
-                      <span class="item-blog__month">Jan</span>
-                    </time>
+                <div class="item-blog__body">
+                  <a href="#">
+                    <div class="item-blog__image">
+                      <picture>
+                        <source type="image/webp" srcset="img/blog/01.webp">
+                        <img src="img/blog/01.jpg" alt="">
+                      </picture>
+                      <time class="item-blog__date" datetime="2021-01-15">
+                        <span class="item-blog__day">15</span>
+                        <span class="item-blog__month">Jan</span>
+                      </time>
+                    </div>
+                  </a>
+                  <h3 class="item-blog__title">
+                    <a class="item-blog__link" href="#">Lorem ipsum dolor sit amet</a>
+                  </h3>
+                  <p class="item-blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="item-blog__footer">
+                    <p class="item-blog__views">
+                      <svg width="20" height="12">
+                        <use xlink:href="#icon-speech-bubble"></use>
+                      </svg>
+                      <span>542</span>
+                    </p>
+                    <p class="item-blog__comments">
+                      <svg width="17" height="15">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      <span>17</span>
+                    </p>
                   </div>
-                </a>
-                <h3 class="item-blog__title">
-                  <a class="item-blog__link" href="#">Lorem ipsum dolor sit amet</a>
-                </h3>
-                <p class="item-blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="item-blog__footer">
-                  <p class="item-blog__views">
-                    <svg width="20" height="12">
-                      <use xlink:href="#icon-speech-bubble"></use>
-                    </svg>
-                    <span>542</span>
-                  </p>
-                  <p class="item-blog__comments">
-                    <svg width="17" height="15">
-                      <use xlink:href="#icon-view"></use>
-                    </svg>
-                    <span>17</span>
-                  </p>
                 </div>
               </li>
 
               <li class="blog__item  item-blog">
-                <a href="#">
-                  <div class="item-blog__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/blog/02.webp">
-                      <img src="img/blog/02.jpg" alt="">
-                    </picture>
-                    <time class="item-blog__date" datetime="2021-01-15">
-                      <span class="item-blog__day">15</span>
-                      <span class="item-blog__month">Jan</span>
-                    </time>
-                  </div>
-                </a>
+                <div class="item-blog__body">
+                  <a href="#">
+                    <div class="item-blog__image">
+                      <picture>
+                        <source type="image/webp" srcset="img/blog/02.webp">
+                        <img src="img/blog/02.jpg" alt="">
+                      </picture>
+                      <time class="item-blog__date" datetime="2021-01-15">
+                        <span class="item-blog__day">15</span>
+                        <span class="item-blog__month">Jan</span>
+                      </time>
+                    </div>
+                  </a>
 
-                <h3 class="item-blog__title">
-                  <a class="item-blog__link" href="#">sed do eiusmod tempor</a>
-                </h3>
-                <p class="item-blog__text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="item-blog__footer">
-                  <p class="item-blog__views">
-                    <svg width="20" height="12">
-                      <use xlink:href="#icon-speech-bubble"></use>
-                    </svg>
-                    <span>542</span>
-                  </p>
-                  <p class="item-blog__comments">
-                    <svg width="17" height="15">
-                      <use xlink:href="#icon-view"></use>
-                    </svg>
-                    <span>17</span>
-                  </p>
+                  <h3 class="item-blog__title">
+                    <a class="item-blog__link" href="#">sed do eiusmod tempor</a>
+                  </h3>
+                  <p class="item-blog__text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="item-blog__footer">
+                    <p class="item-blog__views">
+                      <svg width="20" height="12">
+                        <use xlink:href="#icon-speech-bubble"></use>
+                      </svg>
+                      <span>542</span>
+                    </p>
+                    <p class="item-blog__comments">
+                      <svg width="17" height="15">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      <span>17</span>
+                    </p>
+                  </div>
                 </div>
               </li>
 
               <li class="blog__item  item-blog">
-                <a href="#">
-                  <div class="item-blog__image">
-                    <picture>
-                      <source type="image/webp" srcset="img/blog/03.webp">
-                      <img src="img/blog/03.jpg" alt="">
-                    </picture>
-                    <time class="item-blog__date" datetime="2021-01-15">
-                      <span class="item-blog__day">15</span>
-                      <span class="item-blog__month">Jan</span>
-                    </time>
+                <div class="item-blog__body">
+                  <a href="#">
+                    <div class="item-blog__image">
+                      <picture>
+                        <source type="image/webp" srcset="img/blog/03.webp">
+                        <img src="img/blog/03.jpg" alt="">
+                      </picture>
+                      <time class="item-blog__date" datetime="2021-01-15">
+                        <span class="item-blog__day">15</span>
+                        <span class="item-blog__month">Jan</span>
+                      </time>
+                    </div>
+                  </a>
+                  <h3 class="item-blog__title">
+                    <a class="item-blog__link" href="#">incididunt ut labore et dolore</a>
+                  </h3>
+                  <p class="item-blog__text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="item-blog__footer">
+                    <p class="item-blog__views">
+                      <svg width="20" height="12">
+                        <use xlink:href="#icon-speech-bubble"></use>
+                      </svg>
+                      <span>542</span>
+                    </p>
+                    <p class="item-blog__comments">
+                      <svg width="17" height="15">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      <span>17</span>
+                    </p>
                   </div>
-                </a>
-                <h3 class="item-blog__title">
-                  <a class="item-blog__link" href="#">incididunt ut labore et dolore</a>
-                </h3>
-                <p class="item-blog__text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="item-blog__footer">
-                  <p class="item-blog__views">
-                    <svg width="20" height="12">
-                      <use xlink:href="#icon-speech-bubble"></use>
-                    </svg>
-                    <span>542</span>
-                  </p>
-                  <p class="item-blog__comments">
-                    <svg width="17" height="15">
-                      <use xlink:href="#icon-view"></use>
-                    </svg>
-                    <span>17</span>
-                  </p>
                 </div>
               </li>
 

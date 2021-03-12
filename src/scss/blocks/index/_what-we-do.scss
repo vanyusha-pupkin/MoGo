@@ -1,16 +1,36 @@
 .what-we-do {
-  padding: 110px 0;
+  @include adaptiv-value("padding-bottom", 110, 50, 1);
 }
 
 .what-we-do__header {
   margin-bottom: 100px;
+
+  @media (max-width: $bp-1+px) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $bp-2+px) {
+    margin-bottom: 60px;
+  }
+
+
+  @media (max-width: $bp-4+px) {
+    margin-bottom: 40px;
+  }
+
 }
 
 .what-we-do__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 -15px;
   margin-bottom: -30px;
+
+  @media (max-width: $bp-3+px) {
+    margin: 0;
+    margin-bottom: -30px;
+  }
 }
 
 .what-we-do__item {
@@ -18,6 +38,17 @@
   margin-bottom: 30px;
   padding: 0 15px;
   max-width: 33.333%;
+
+  @media (max-width: $bp-2+px) {
+    flex: 0 0 50%;
+    max-width: 380px;
+  }
+
+  @media (max-width: $bp-3+px) {
+    flex: 0 0 100%;
+    max-width: 380px;
+    padding: 0;
+  }
 }
 
 

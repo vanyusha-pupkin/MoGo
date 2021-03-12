@@ -1,14 +1,13 @@
 .for-all-devices {
   position: relative;
 
-  padding-top: 110px;
-
   text-align: center;
 
   @include background-image-webp("../img/for-all-devices/bg", "jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+
 }
 
 .for-all-devices__header {}
@@ -21,4 +20,12 @@
   bottom: -90px;
 
   transform: translate(120px, 0);
+
+  @media (max-width: 830px) {
+    width: 36%;
+    height: auto;
+    bottom: -10%;
+
+    transform: translate(35%, 0);
+  }
 }

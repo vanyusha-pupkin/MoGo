@@ -1,6 +1,6 @@
 .clients {
-  padding-top: 110px;
-  padding-bottom: 130px;
+  @include adaptiv-value("padding-bottom", 110, 50, 1);
+  // padding-bottom: 130px;
 
   @include background-image-webp("../img/clients/bg", "jpg");
   background-position: center;
@@ -10,18 +10,29 @@
 }
 
 .clients__header {
-  margin-bottom: 87px;
+  // margin-bottom: 87px;
+  @include adaptiv-value("margin-bottom", 90, 50, 1);
+
 }
 
 .clients__list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -70px;
+
+  @media (max-width: $bp-3+px) {
+      margin-bottom: -50px;
+    }
 }
 
 .clients__item {
   flex: 0 0 50%;
   margin-bottom: 70px;
+
+  @media (max-width: $bp-3+px) {
+    flex: 0 0 100%;
+    margin-bottom: 50px;
+  }
 }
 
 
@@ -32,6 +43,19 @@
   padding-top: 5px;
   padding-left: 180px;
   padding-right: 40px;
+
+  @media (max-width: $bp-2+px) {
+    padding-left: 150px;
+    padding-right: 10px;
+  }
+
+  @media (max-width: $bp-4+px) {
+    padding-top: 140px;
+    padding-left: 0;
+    padding-right: 0;
+
+    text-align: center;
+  }
 }
 
 .item-clients__photo {
@@ -44,6 +68,16 @@
 
   border-radius: 50%;
   overflow: hidden;
+
+  @media (max-width: $bp-2+px) {
+    left: 20px;
+  }
+
+  @media (max-width: $bp-4+px) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
 }
 
 .item-clients__name {
@@ -80,6 +114,13 @@
     height: 3px;
 
     background-color: $color-red;
+  }
+
+  @media (max-width: $bp-4+px) {
+    &::after {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 }
 

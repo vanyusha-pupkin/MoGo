@@ -20,6 +20,11 @@
 
   border: solid 1px #e7e7e7;
   border-right: none;
+
+  @media (max-width: $bp-4+px) {
+    border-right: solid 1px #e7e7e7;
+
+  }
 }
 
 .form__input {}

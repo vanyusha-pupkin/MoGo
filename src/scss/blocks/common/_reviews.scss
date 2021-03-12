@@ -10,10 +10,31 @@
   position: relative;
 
   display: flex;
-  align-items: center;
-  padding: 70px 0;
-  padding-left: 110px;
-  padding-right: 100px;
+  // align-items: center;
+  align-items: flex-start;
+  //padding: 70px 0;
+  //@include adaptiv-value("padding", 70, 30, 1);
+
+
+  @include adaptiv-value("padding-left", 110, 50, 1);
+  @include adaptiv-value("padding-right", 100, 50, 1);
+
+  // padding-left: 110px;
+  // padding-right: 100px;
+
+  // @media (max-width: $bp-1+px) {
+  //   padding-left: 90px;
+  //   padding-right: 80px;
+  // }
+
+  .reviews--grey & {
+    @include adaptiv-value("padding-top", 70, 30, 1);
+    @include adaptiv-value("padding-bottom", 70, 30, 1);
+  }
+
+  @media (max-width: $bp-3+px) {
+    display: block;
+  }
 
 }
 
@@ -30,6 +51,13 @@
   svg {
     fill: $color-turquoise;
   }
+
+  @media (max-width: $bp-3+px) {
+    display: none;
+    // flex: 0 0 100px;
+    // height: 100px;
+    // margin-right: 40px;
+  }
 }
 
 .reviews__photo {
@@ -39,6 +67,13 @@
 
   border-radius: 50%;
   overflow: hidden;
+
+  @media (max-width: $bp-3+px) {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 .reviews__content {}
@@ -52,15 +87,19 @@
   font-style: italic;
   line-height: 1.5;
   color: $color-grey;
+
+  @include adaptiv-font(24, 14);
 }
 
 .reviews__author {
   position: relative;
 
-  padding-left: 70px;
+  //padding-left: 70px;
+  @include adaptiv-value("padding-left", 70, 50, 1);
 
   font-family: KaushanScript;
-  font-size: 24px;
+  //font-size: 24px;
+  @include adaptiv-font(24, 18);
   color: #333333;
 
   &::before {
@@ -71,7 +110,8 @@
     top: 50%;
     left: 0;
 
-    width: 60px;
+    //width: 60px;
+    @include adaptiv-value("width", 60, 40, 1);
     height: 3px;
     background-color: $color-red;
 
@@ -101,13 +141,22 @@
 
   &--prev {
     left: 0;
+
     transform: translate(0, -50%);
-    // transform: rotate(-90deg);
+
+    @media (max-width: $bp-1+px) {
+      left: 15px;
+    }
   }
 
   &--next {
     right: 0;
 
     transform: translate(0, -50%) rotate(180deg);
+
+    @media (max-width: $bp-1+px) {
+      right: 15px;
+    }
   }
+
 }
